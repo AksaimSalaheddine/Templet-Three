@@ -2,6 +2,10 @@
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+}
+* {
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -13,6 +17,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 .contianer {
   padding-left: 15px;
@@ -39,3 +46,43 @@ ul {
   }
 }
 /* End globle rules */
+/* Start header  */
+.header {
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+.header .contianer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .main-nav {
+  display: flex;
+}
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0 30px;
+  position: relative;
+  height: 72px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+/* End header  */
