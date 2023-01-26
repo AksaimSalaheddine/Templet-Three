@@ -79,10 +79,32 @@ a {
   padding: 0 30px;
   position: relative;
   height: 72px;
+  overflow: hidden;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
+}
+.header .main-nav > li > a::before {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  left: -100%;
+  position: absolute;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.header .main-nav > li > a:hover::before {
+  left: 0;
+}
+.header .main-nav > li > a:hover {
+  background-color: #fafafa;
+  color: var(--main-color-alt);
 }
 /* End header  */
