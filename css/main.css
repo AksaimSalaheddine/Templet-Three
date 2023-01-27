@@ -57,7 +57,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .header .logo {
   font-size: 24px;
@@ -113,4 +113,68 @@ a {
 .header .main-nav > li:hover {
   background-color: #fafafa;
 }
+@media (max-width: 768px) {
+  .header .logo {
+    width: 100%;
+    height: 50px;
+  }
+  .header .main-nav > li > a {
+    padding: 0 15px;
+    height: 50px;
+  }
+}
 /* End header  */
+/* start landing */
+.landing {
+  position: relative;
+}
+.landing:before {
+  content: "";
+  background-color: #ececec;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: left top;
+}
+.landing .contianer {
+  height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.landing .text {
+  flex: 1;
+}
+.landing .text h1 {
+  font-size: 40px;
+  letter-spacing: -2px;
+  margin: 0;
+}
+.landing .text p {
+  font-size: 24px;
+  line-height: 1.7;
+  margin: 5px 0 0;
+  color: #666;
+  max-width: 500px;
+}
+.landing .img img {
+  width: 600px;
+  max-width: 100%;
+}
+.landing .go-down {
+  color: var(--main-color);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--main-transition);
+}
+.landing .go-down i {
+  animation: bouncing 1.5s infinite;
+}
+/* end landing */
