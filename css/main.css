@@ -124,6 +124,7 @@ a {
   .header .main-nav > li > a {
     padding: 0 15px;
     height: 50px;
+    font-size: 14px;
   }
 }
 /* End header  */
