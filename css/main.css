@@ -113,6 +113,30 @@ a {
 .header .main-nav > li:hover {
   background-color: #fafafa;
 }
+.header .mega-menu {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 50px);
+  border-bottom: 3px solid var(--main-color);
+}
+.header .mega-menu li a {
+  padding: 15px;
+  color: var(--main-color);
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header .mega-menu li a i {
+  margin-right: 10px;
+}
+.header .mega-menu img {
+  max-width: 100%;
+}
 @media (max-width: 768px) {
   .header .logo {
     width: 100%;
@@ -127,6 +151,7 @@ a {
     font-size: 14px;
   }
 }
+
 /* End header  */
 /* start landing */
 .landing {
