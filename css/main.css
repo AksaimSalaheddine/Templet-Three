@@ -540,23 +540,23 @@ a {
 }
 /* End gallery */
 /* Start Featuers */
-.features {
+.feautres {
   padding: var(--main-padding);
 }
-.features .contianer {
+.feautres .contianer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
-.features .box {
+.feautres .box {
   text-align: center;
   border: 1px solid #ccc;
 }
-.features .box .img-holder {
+.feautres .box .img-holder {
   position: relative;
   overflow: hidden;
 }
-.features .box .img-holder::before {
+.feautres .box .img-holder::before {
   content: "";
   position: absolute;
   left: 0;
@@ -564,7 +564,7 @@ a {
   width: 100%;
   height: 100%;
 }
-.features .box .img-holder::after {
+.feautres .box .img-holder::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -578,19 +578,19 @@ a {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.features .box:hover .img-holder::after {
+.feautres .box:hover .img-holder::after {
   border-width: 170px 500px 170px 0px;
 }
-.features .box .img-holder img {
+.feautres .box .img-holder img {
   max-width: 100%;
 }
-.features .box h2 {
+.feautres .box h2 {
   width: fit-content;
   margin: auto;
   font-size: 40px;
   position: relative;
 }
-.features .box h2::before {
+.feautres .box h2::before {
   content: "";
   position: absolute;
   width: 80%;
@@ -603,14 +603,14 @@ a {
   -ms-transform: translatex(-50%);
   -o-transform: translatex(-50%);
 }
-.features .box p {
+.feautres .box p {
   line-height: 2;
   color: #777;
   font-size: 20px;
   margin: 30px 0;
   padding: 25px;
 }
-.features .box a {
+.feautres .box a {
   display: block;
   width: fit-content;
   margin: 0 auto 30px;
@@ -628,54 +628,54 @@ a {
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.features .quality .img-holder::before {
+.feautres .quality .img-holder::before {
   background-color: rgb(244 64 54 / 60%);
 }
-.features .quality h2::before {
+.feautres .quality h2::before {
   background-color: #f44036;
 }
-.features .quality a {
+.feautres .quality a {
   color: #f44036;
   border-color: #f44036;
   background: linear-gradient(to right, #f44036 49.8%, white 50%);
   background-size: 200% 100%;
   background-position: right top;
 }
-.features .box:hover a.quality {
+.feautres .box:hover a.quality {
   background-position: left top;
   color: white;
 }
-.features .time .img-holder::before {
+.feautres .time .img-holder::before {
   background-color: rgb(0 150 136 / 60%);
 }
-.features .time h2::before {
+.feautres .time h2::before {
   background-color: #009688;
 }
-.features .time a {
+.feautres .time a {
   color: #009688;
   border-color: #009688;
   background: linear-gradient(to left, #009688 50.2%, white 50%);
   background-size: 200% 100%;
   background-position: left top;
 }
-.features .box:hover a.time {
+.feautres .box:hover a.time {
   background-position: right top;
   color: white;
 }
-.features .passion .img-holder::before {
+.feautres .passion .img-holder::before {
   background-color: rgb(3 169 244 / 60%);
 }
-.features .passion h2::before {
+.feautres .passion h2::before {
   background-color: #03a9f4;
 }
-.features .passion a {
+.feautres .passion a {
   color: #03a9f4;
   border-color: #03a9f4;
   background: linear-gradient(to right, #03a9f4 49.8%, white 50%);
   background-size: 200% 100%;
   background-position: right top;
 }
-.features .box:hover a.passion {
+.feautres .box:hover a.passion {
   background-position: left top;
   color: white;
 }
