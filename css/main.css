@@ -7,6 +7,8 @@
 }
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 html {
   /* scroll-behavior: smooth; */
@@ -846,6 +848,7 @@ a {
 }
 .team .box .info h3 {
   margin-bottom: 0;
+  margin-top: 15px;
   color: var(--main-color);
   font-size: 22px;
   transition: var(--main-transition);
@@ -990,6 +993,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .our-skills .skill h3 span {
   font-size: 12px;
@@ -1002,6 +1006,7 @@ a {
   height: 30px;
   background-color: #eee;
   position: relative;
+  margin-bottom: 15px;
 }
 .our-skills .skill .the-progress span {
   position: absolute;
@@ -1381,3 +1386,72 @@ a {
   color: white;
 }
 /* End Pricing */
+/* Start Videos */
+.videos {
+  padding: var(--main-padding);
+  position: relative;
+}
+.videos .contianer {
+  border: 1px solid #ddd;
+  padding: 0;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .videos .contianer {
+    flex-direction: column;
+  }
+  .videos .side p {
+    margin-top: 15px;
+  }
+}
+.videos .top {
+  min-width: 300px;
+}
+.videos .top p {
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  color: var(--main-color);
+}
+.videos .top li {
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+.videos .top li a {
+  color: black;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.videos .top li a:hover {
+  color: var(--main-color);
+}
+.videos .top li span {
+  display: block;
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+}
+.videos .side {
+  padding: 10px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.videos .side img {
+  max-width: 100%;
+}
+.videos .side p {
+  background-color: white;
+  padding: 20px;
+  color: var(--main-color-alt);
+  font-style: oblique 90deg;
+  font-weight: 600;
+}
+/* End Videos */
